@@ -14,7 +14,7 @@ allprojects {
 ```
 2.添加
 ```java
-implementation 'com.github.summersrest:PictureShow:v1.0.1'
+implementation 'com.github.summersrest:Spinner:v1.0.0'
 ```
 ## **2、使用**
 ### **1、加载List<String>**
