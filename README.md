@@ -1,5 +1,6 @@
 # NiceSpinner2AndroidX
 NiceSpinner修改为AndroidX版本
+
 原库地址：https://github.com/arcadefire/nice-spinner
 ## **1、导入**
  1.引入jitpack
