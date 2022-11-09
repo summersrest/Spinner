@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Selected: " + item, Toast.LENGTH_SHORT).show();
             }
         });
+
     }
 
     private void setupTintedWithCustomClass() {
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         people.add(new Person("Steve", "Rogers"));
         people.add(new Person("Bruce", "Banner"));
 
-        SpinnerTextFormatter textFormatter = new SpinnerTextFormatter<Person>() {
+        SpinnerTextFormatter<Person> textFormatter = new SpinnerTextFormatter<Person>() {
             @Override
             public Spannable format(Person person) {
                 return new SpannableString(person.getName() + " " + person.getSurname());
@@ -64,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         spinner.attachDataSource(people);
+        spinner.setSelectedIndex(1);
     }
 
     private void setupDefault() {
@@ -77,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Selected: " + item, Toast.LENGTH_SHORT).show();
             }
         });
+        spinner.setSelectedIndex(2);
     }
 }
 
